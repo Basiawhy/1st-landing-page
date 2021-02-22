@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> 😎 Bouldering ☀</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        
+        .container {
+            max-width: 600px;
+            background-color: bisque;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+            font-family: Verdana;
+            font-size: 45px;
+            padding: 20px 0px 5px;
+        }
+        
+        h2 {
+            text-align: center;
+            color: brown;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 5px 0px;
+        }
+        
+        .text {
+            text-align: center;
+            padding: 10px 50px;
+            font-family: Sans-serif;
+            font-weight: lighter;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        
+        img {
+            display: block;
+            margin: 0 auto;
+            padding: 10 px 50px;
+            border-radius: 30px;
+            max-width: 90%;
+        }
+        
+        .linksstyle {
+            text-align: center;
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            text-decoration: none;
+        }
+        
+        .links {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: brown;
+            font-size: 25px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        
+        button {
+            display: block;
+            margin: 0 auto;
+            background-color: blueviolet;
+            color: azure;
+            border: solid 2px blueviolet;
+            border-radius: 30px;
+            padding: 15px 30px;
+            font-size: 20px;
+            box-shadow: 0px 5px 10px;
+            transition: all 150ms ease-in-out;
+        }
+        
+        button:hover {
+            background-color: azure;
+            color: blueviolet;
+            cursor: pointer;
+        }
+        
+        .footer {
+            text-align: center;
+            font-family: Helvetica;
+            font-size: 15px;
+        }
+    </style>
+
+    <body>
+
+        <div class="container">
+
+            <h1>
+                BOULDERING
+            </h1>
+
+            <h2>
+                Great way to spend your free time!
+            </h2>
+
+            <hr>
+            <br>
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg05JlKlP0y7WgJ5QD_d6YhCkTphw57ekSOQ&usqp=CAU" />
+
+            <p class="text">
+                <strong>Bouldering</strong> is a form of rock climbing that is performed on small rock formations or artificial rock walls without the use of ropes or harnesses. While bouldering can be done without any equipment, most climbers use climbing
+                shoes to help secure footholds, chalk to keep their hands dry and to provide a firmer grip, and bouldering mats to prevent injuries from falls. Unlike free solo climbing, which is also performed without ropes, bouldering problems (the
+                sequence of moves that a climber performs to complete the climb) are usually less than 6 meters (20 ft.) tall. Traverses, which are a form of boulder problem, require the climber to climb horizontally from one end to another. Artificial
+                climbing walls allow boulderers to climb indoors in areas without natural boulders. In addition, bouldering competitions take place in both indoor and outdoor settings
+
+            </p>
+
+            <img src="https://sklep.jack-wolfskin.pl/media/mageplaza/blog/post/b/o/bouldering.jpg" />
+
+            <p class="text">
+                <strong>Artificial climbing walls</strong> are used to simulate boulder problems in an indoor environment, usually at climbing gyms. These walls are constructed with wooden panels, polymer cement panels, concrete shells, or precast molds
+                of actual rock walls. Holds, usually made of plastic, are then bolted onto the wall to create problems. The walls often feature steep overhanging surfaces which force the climber to employ highly technical movements while supporting much
+                of their weight with their upper body strength.However, in more recent times, many problems set on flat walls now require the climber to execute a series of coordinated movements in order to complete the route. These routes were likely
+                to have originated at the Stuntwerk gym in Germany, and the style of climbing can be said to closely resemble the sport of Parkour. The IFSC Climbing World Championships have noticeably included more of such problems in their competitions
+                as of late.
+            </p>
+
+
+            <button>Check it out!</button>
+            <br>
+            <p class="links">
+                <strong><em>Useful links:</em></strong>
+            </p>
+            <p class="linksstyle">
+
+                <a href="https://www.facebook.com/CubeBaldyKawa/" target="_blank"> Cube Baldy & Kawa bouldering site</a>
+
+                <br>
+                <a href="https://en.wikipedia.org/wiki/Bouldering" target="_blank"> Learn more about bouldering</a>
+            </p>
+            <p class="footer">
+                Coded by Basia Łajczak 😎
+            </p>
+        </div>
+
+        <script>
+            function checkItOut() {
+
+                let name = prompt("What is your name?");
+                let email = prompt("What is your email address?")
+                let agreement = prompt("Do you want to receive a bouldering newsletter? Yes/No");
+
+                if (agreement === "Yes") {
+                    alert("Hi " + name + ", we will send a newsletter to: " + email);
+                } else {
+                    alert("Hi " + name + ",please come back to us one day!");
+                }
+            }
+
+            let checkItOutButton = document.querySelector("button");
+            checkItOutButton.addEventListener("click", checkItOut);
+        </script>
+
+
+    </body>
+
+
+</head>
